@@ -1,0 +1,118 @@
+#firstRow{
+	font-size: 13px;
+
+}
+
+a:link    {color:black; background-color:transparent; }
+a:visited {color:black; background-color:transparent; text-decoration:underline}
+a:hover   {color:black; background-color:transparent; text-decoration:underline;border-style:solid;}
+a:active  {color:blue; background-color:transparent; text-decoration:underline}
+#secondRow{
+	margin-top: 20px;
+}
+
+#ssr{
+	color: #FFFFFF;
+	font-size: 40px;
+}
+#rowOfBook{
+	background-color: #000000;
+}
+button:hover {
+	background-color: red;
+	border-style: solid;
+	border-width: 5px;
+}
+button:active {
+	background-color: red;
+}
+#flight:hover{
+border-style: solid;
+	border-width: 5px;
+		background-color: white;
+		font-size: 30px;
+
+}
+#flights{
+	background-color: white;
+	font-size: 20px;
+}
+#click{
+	color: black;
+	font-size: 30px;
+     font-family: sans-serif;
+     margin: auto;
+    width: 60%;
+    border: 3px solid black;
+    padding: 10px;
+ }
+p{
+	color: white;
+	font-size: 20px;
+
+}
+#fotter{
+	background-color: black;
+
+}
+#fotterWord{
+	color: white;
+	font-size: 10px;
+    font-weight: bold;
+}
+#out{
+	text-align: center;
+}
+#book{
+	alignment-baseline: central;
+	text-align: center;
+}
+
+h1{
+    text-align:center;
+    position: relative;
+    margin: auto;
+    padding-bottom:15px;
+}
+table{
+    padding-top:50px;
+    position: relative; 
+    margin: auto;
+    width: 90%;
+    padding: 15px;
+    border-collapse: collapse;
+}
+th{
+  font-size: larger;
+  font-weight: bolder;
+  font-family: monospace;
+  background-color: yellow;
+  color: black;
+  border-bottom: 1px solid #bbb;
+}
+td{
+  font-family: monospace;
+  color: black;
+  border-bottom: 1px solid #bbb;
+}
+#tablec{
+  overflow-x:auto;
+  overflow-y:auto;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover{background-color:#a1a1a1;}
+
+h2{
+	text-align: center;
+	text-indent: inherit;
+}
+
+#signup{
+    
+}
+
+.sign{
+    text-align: center;
+    width: 50%;
+	margin-top: 40px;
+}

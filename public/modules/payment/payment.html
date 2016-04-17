@@ -1,0 +1,30 @@
+<img src="assets/img/spirit-less-money-more-go-logo.jpg" style="width:304px;height:228px;" align="center">
+<div ng-hide='showTransNumber'>
+    <h1>Payment</h1>
+
+    <table>
+        <tr>
+            <td>booking number:</td>
+            <td>
+                <input type="text" disabled name="booking number" ng-model="bookingNumber">
+            </td>
+        </tr>
+        <tr>
+            <td>Please enter the card number:</td>
+            <td>
+                <input type="text" name="card number" ng-model="visaNumber">
+            </td>
+        </tr>
+    </table>
+    <div id="pp">
+        <button class="medium secondary button" ng-click="pay()">pay</button>
+    </div>
+</div>
+
+
+
+
+<div ng-show='showTransNumber'>
+    Booking Number: <input type="text" disabled ng-model="transNumber">
+    
+</div>

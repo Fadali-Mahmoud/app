@@ -1,0 +1,46 @@
+[
+  {
+    "FlightID": "521",
+    "AirportID": "654",
+    "Aircraft": "omak ",
+    "Capacity": "zebeen w7ed",
+    "Date": "11/2/2011",
+    "Destination": "bait el 3ala",
+    "Duration": "2",
+    "Origin": "egypt",
+    "Terminal": "omak"
+  },
+  {
+    "FlightID": "654",
+    "AirportID": "6514",
+    "Aircraft": "String ",
+    "Capacity": "String",
+    "Date": "Date",
+    "Destination": "String",
+    "Duration": "Time",
+    "Origin": "String",
+    "Terminal": "String"
+  },
+  {
+    "FlightID": "String",
+    "AirportID": "String",
+    "Aircraft": "String ",
+    "Capacity": "String",
+    "Date": "Date",
+    "Destination": "String",
+    "Duration": "Time",
+    "Origin": "String",
+    "Terminal": "String"
+  },
+  {
+    "FlightID": "String",
+    "AirportID": "String",
+    "Aircraft": "String ",
+    "Capacity": "String",
+    "Date": "Date",
+    "Destination": "String",
+    "Duration": "Time",
+    "Origin": "String",
+    "Terminal": "String"
+  }
+]

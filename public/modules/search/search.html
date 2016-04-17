@@ -1,0 +1,42 @@
+<div class="row" ng-hide='showResults'>
+    From
+    <input type="text" placeholder="From" ng-model="form.from"> To
+    <input type="text" placeholder="To" ng-model="form.to"> Departure Date
+    <input type="text" placeholder="DD/MM/YYYY" ng-model="form.departureDate"> Arrival Date
+    <input type="text" placeholder="DD/MM/YYYY" ng-model="form.arrivalDate">
+    <button class="medium secondary button" ng-click="SearchFlights()">Search</button>
+
+</div>
+<div ng-show='showResults'>
+    <div>
+        <h1 id='out'>
+            Search Results
+        </h1>
+    </div>
+    <div id="tablec">
+        <table>
+            <thead>
+                <tr>
+                    <th>Flight Number</th>
+                    <th>Departure Date</th>
+                    <th>Arrival Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Slots</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="flight in flights">
+                    <td>{{flight.FlightID}}</td>
+                    <td>{{flight.DepartureDate | date}}</td>
+                    <td>{{flight.ArrivalDate | date}}</td>
+                    <td>{{flight.Origin}}</td>
+                    <td>{{flight.Destination}}</td>
+                    <td>{{flight.Capacity}}</td>
+                    <td><button class="medium secondary button" ng-click="bookFlight(this)">Book Flight</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="medium secondary button" ng-click="reset()">reset</button>
+</div>

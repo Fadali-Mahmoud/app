@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spirit AirLines</title>
+    <link rel="shortcut icon" href="img/s.ico" />
+    <link rel="stylesheet" href="assets/css/foundation.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+    <script src="assets/js/vendor/angular.min.js"></script>
+    <script src="assets/js/vendor/angular-ui-router.min.js"></script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/what-input.min.js"></script>
+    <script src="assets/js/vendor/foundation.min.js"></script>
+    <script src="assets/js/vendor/moment.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</head>
+
+<body style="background-image: url('assets/img/home.png')" ng-app="spirit">
+
+
+    <div class="row">
+        <div class="large-1 columns" id="firstRow">
+            <a href="">Spirit 101</a>
+        </div>
+        <div class="large-2 columns" id="firstRow">
+            <a href="">$9 Fare Club</a>
+        </div>
+        <div class="large-1 columns" id="firstRow">
+            <a href="">Free Spirit</a>
+        </div>
+        <div class="large-1 columns" id="firstRow">
+            <a href="">Deals</a>
+        </div>
+        <div class="large-2 columns" id="firstRow">
+            <a href="">Where We Fly</a>
+        </div>
+        <div class="large-2 columns" id="firstRow">
+            <a href="">Optional Services</a>
+        </div>
+        <div class="large-2 columns" id="firstRow">
+            <a href="">New Bag Prices</a>
+        </div>
+        <div class="large-1 columns" id="firstRow">
+            <a href="">Help</a>
+        </div>
+    </div>
+
+
+    <div class="row" id="secondRow" ng-controller="indexCtrl">
+        <div class="large-4 columns">
+            <img src="assets/img/logo.jpg">
+        </div>
+        <div class="large-4 columns" id="signup" ng-hide='loggedIn'>
+            <a href="#" class="large alert button" ui-sref='signup'>Sign Up</a>
+        </div>
+        <div class="large-4 columns" ng-hide='loggedIn'>
+            <input type="text" placeholder="Username" ng-model='username' >
+            <input type="password" placeholder="Password" ng-model='password'>
+            <button class="medium secondary button" ng-click="signin()">LOGIN</button>
+        </div>
+
+    </div>
+
+
+    <div class="row" id="rowOfBook">
+        <div class="large-2 columns">
+            <button id="ssr" ui-sref='home'>Home</button>
+        </div>
+        <div class="large-4 columns">
+            <button id="ssr" ui-sref='flights'>Outgoing Flights</button>
+        </div>
+        <div class="large-3 columns">
+            <button id="ssr" ui-sref='search'>Search Flights</button>
+        </div>
+        <div class="large-3 columns">
+            <button id="ssr" >About Us</button>
+        </div>
+    </div>
+
+
+
+
+    <div ui-view></div>
+
+
+
+    <div class="row" id="fotter">
+        <div class="large-3 columns">
+            <p>ABOUT SPIRIT</p>
+            <br>
+            <a href="" id="fotterWord">About Us</a>
+            <br>
+            <a href="" id="fotterWord">Investor Relations</a>
+            <br>
+            <a href="" id="fotterWord">Careers</a>
+            <br>
+            <a href="" id="fotterWord">Store</a>
+            <br>
+        </div>
+        <div class="large-3 columns">
+            <p>AGENTS&TEAM</p>
+            <br>
+            <a href="" id="fotterWord">Travel Agents</a>
+            <br>
+            <a href="" id="fotterWord">Team Login</a>
+            <br>
+            <a href="" id="fotterWord">Team Travel</a>
+            <br>
+            <a href="" id="fotterWord">OA Travel/JumpSeat</a>
+            <br>
+        </div>
+        <div class="large-3 columns">
+            <p>News&Press</p>
+            <br>
+            <a href="" id="fotterWord">Media Center</a>
+            <br>
+            <a href="" id="fotterWord">Events</a>
+            <br>
+            <a href="" id="fotterWord">Advertise with us</a>
+            <br>
+        </div>
+        <div class="large-3 columns">
+            <p>CUSTOMER SERVICE</p>
+            <br>
+            <a href="" id="fotterWord"> Help</a>
+            <br>
+            <a href="" id="fotterWord">Group Travel</a>
+            <br>
+            <a href="" id="fotterWord">Legal</a>
+            <br>
+            <a href="" id="fotterWord">Contract of Carriage</a>
+            <br>
+            <a href="" id="fotterWord">Customer Service Plan</a>
+            <br>
+            <a href="" id="fotterWord">Tarmac Delay Plan</a>
+            <br>
+            <a href="" id="fotterWord">Contact us</a>
+            <br>
+        </div>
+    </div>
+
+    <script src="assets/js/static.js"></script>
+
+    <script src="controllers/indexCtrl.js"></script>
+    <script src="modules/home/homeCtrl.js"></script>
+    <script src="modules/flights/flightsCtrl.js"></script>
+    <script src="modules/search/searchCtrl.js"></script>
+    <script src="modules/payment/paymentCtrl.js"></script>
+    <script src="modules/signup/signupCtrl.js"></script>
+
+
+    <script src="Services/flightsSrv.js"></script>
+    <script src="Services/bookingSrv.js"></script>
+    <script src="Services/userSrv.js"></script>
+
+</body>
+
+</html>

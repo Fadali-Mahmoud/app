@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+      <link rel="shortcut icon" href="img/s.ico" />
+      <link rel="stylesheet" href="css/table.CSS">
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+       <script type="text/javascript" src="js/app2.js"></script>
+       <title>Outgoing Page</title>
+    </head>
+    <body style="background-image: url('img/home.png')">
+    <div>
+        <h1>
+            Outgoing Flights
+        </h1>
+    </div>
+    <div id="tablec">
+        <table>
+            <thead>
+                <tr>
+            <th>Flight Number</th>
+            <th>Departure</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Slots</th>
+            </tr>
+            </thead>
+            <tbody ng-controller="FlightListController as list">
+        <tr ng-repeat="flight in list.flights">
+          <td>{{flight.num}}</td>
+          <td>{{flight.dep}}</td>
+          <td>{{flight.from}}</td>
+          <td>{{flight.to}}</td>
+          <td>{{flight.slots}}</td>
+        </tr>
+      </tbody>
+         </table>
+    </div>
+</html>

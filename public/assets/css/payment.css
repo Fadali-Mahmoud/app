@@ -1,0 +1,39 @@
+div{ 
+min-height: 100%;
+position: relative;
+width: 100%;
+}
+h1{
+	text-align: center;
+	font-size: larger;
+}
+table{
+	text-align: center;
+	position: relative;
+	margin: auto;
+	width: 50%;
+	border-collapse: collapse;
+}
+tr{
+	text-align: left;
+	width: 15px;
+}
+#pp{ 
+margin: auto;
+padding-top: 15px;
+position: relative;
+text-align: center;
+}
+#p{
+	background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: monospace;
+    cursor:pointer; 
+}
+

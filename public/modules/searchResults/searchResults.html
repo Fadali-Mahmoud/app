@@ -1,0 +1,30 @@
+<div>
+    <h1 id='out'>
+            Search Results
+        </h1>
+</div>
+<div id="tablec">
+    <table>
+        <thead>
+            <tr>
+                <th>Flight Number</th>
+                <th>Departure Date</th>
+                <th>Arrival Date</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Slots</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="flight in flights">
+                <td>{{flight.FlightID}}</td>
+                <td>{{flight.DepartureDate}}</td>
+                <td>{{flight.ArrivalDate}}</td>
+                <td>{{flight.Origin}}</td>
+                <td>{{flight.Destination}}</td>
+                <td>{{flight.Capacity}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

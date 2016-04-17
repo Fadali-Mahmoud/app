@@ -1,0 +1,18 @@
+    {
+    "FlightID":"String",
+	"AirportID":"String",
+	"Aircraft":"String ",
+	"Capacity":"String",
+	"Date":"Date",
+	"Destination":"String",
+	"Duration":"Time",
+	"Origin":"String",
+	"Terminal":"String",
+	"SeatMap":[{
+		"Seats":"String",
+		"TravelType":"String",
+		"Window/asile":"String",
+		"Cost":"Number",
+		"Reservation_id":"String"
+	}]
+}
