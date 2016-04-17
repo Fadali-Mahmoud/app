@@ -7,78 +7,53 @@ module.exports = function () {
      * init the first seed into db
      */
     var dbSeed = function (req, res) {
-        var flights = [
+        var flights = [{
+	"FlightID": "m12",
+	"AirportID": "m12",
+	"Aircraft": "m12",
+	"Capacity": "123",
+	"Destination": "england",
+	"Duration": 2,
+	"Origin": "egypt",
+	"Terminal": "c1",
+	"DepartureDate": "4/18/2016",
+	"ArrivalDate": "4/20/2016",
+	"SeatMap": [{
+		"Seats": "a1",
+		"TravelType": "c",
+		"Window": "y",
+		"Cost": 123,
+		"ReservationId": 1
+	},{
+		"Seats": "a2",
+		"TravelType": "c",
+		"Window": "y",
+		"Cost": 123,
+		"ReservationId": 2
+	}]
+},
             {
-                FlightID: 'm12',
-                AirportID: 'm12',
-                Aircraft: 'm12',
-                Capacity: '123',
-                Destination: 'england',
-                Duration: '2',
-                Origin: 'egypt',
-                Terminal: 'c1',
-                DepartureDate: '4/18/2016',
-                ArrivalDate: '4/20/2016',
-                SeatMap: [{
-                    Seats: 'a1',
-                    TravelType: 'c',
-                    Window: 'y',
-                    Cost: 123,
-                    ReservationId: 1
+                "FlightID": "m212",
+                "AirportID": "m1322",
+                "Aircraft": "m1weqw2",
+                "Capacity": 153,
+                "Destination": "england",
+                "Duration": 5,
+                "Origin": "egypt",
+                "Terminal": "c1",
+                "DepartureDate": "4/12/2016",
+                "SeatMap": [{
+                    "Seats": "a1",
+                    "TravelType": "c",
+                    "Window": "y",
+                    "Cost": 123,
+                    "ReservationId": 1
                 }, {
-                    Seats: 'a1',
-                    TravelType: 'c',
-                    Window: 'y',
-                    Cost: 123,
-                    ReservationId: 1
-                }]
-            },
-            {
-                FlightID: 'm212',
-                AirportID: 'm1322',
-                Aircraft: 'm1weqw2',
-                Capacity: '153',
-                Destination: 'england',
-                Duration: '5',
-                Origin: 'egypt',
-                Terminal: 'c1',
-                DepartureDate: '4/12/2016',
-                SeatMap: [{
-                    Seats: 'a1',
-                    TravelType: 'c',
-                    Window: 'y',
-                    Cost: 123,
-                    ReservationId: 1
-                }, {
-                    Seats: 'a1',
-                    TravelType: 'c',
-                    Window: 'y',
-                    Cost: 123,
-                    ReservationId: 1
-                }]
-            },
-            {
-                FlightID: 'm562',
-                AirportID: 'm1322',
-                Aircraft: 'm1weqw2',
-                Capacity: '153',
-                Destination: 'england',
-                Duration: '5',
-                Origin: 'egypt',
-                Terminal: 'c1',
-                DepartureDate: '4/12/2016',
-                SeatMap: [{
-                    Seats: 'a1',
-                    TravelType: 'c',
-                    Window: 'y',
-                    Cost: 123,
-                    ReservationId: 1
-                }, {
-                    Seats: 'a1',
-                    TravelType: 'c',
-                    Window: 'y',
-                    Cost: 123,
-                    ReservationId: 1
+                    "Seats": "a1",
+                    "TravelType": "c",
+                    "Window": "y",
+                    "Cost": 123,
+                    "ReservationId": 1
                 }]
             }
         ];
