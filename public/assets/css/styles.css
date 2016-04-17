@@ -107,12 +107,12 @@ h2{
 }
 
 #signup{
-    margin:auto;
+    margin:inherit ;
     text-align: center;
 }
 
 .sign{
-    text-align: center;
+    text-align: inherit;
     width: 50%;
 	margin-top: auto;
 }

@@ -34,12 +34,36 @@ module.exports = function () {
                 }]
             },
             {
-                FlightID: 'm12',
-                AirportID: 'm12',
-                Aircraft: 'm12',
-                Capacity: '123',
+                FlightID: 'm212',
+                AirportID: 'm1322',
+                Aircraft: 'm1weqw2',
+                Capacity: '153',
                 Destination: 'england',
-                Duration: '2',
+                Duration: '5',
+                Origin: 'egypt',
+                Terminal: 'c1',
+                DepartureDate: '4/12/2016',
+                SeatMap: [{
+                    Seats: 'a1',
+                    TravelType: 'c',
+                    Window: 'y',
+                    Cost: 123,
+                    ReservationId: 1
+                }, {
+                    Seats: 'a1',
+                    TravelType: 'c',
+                    Window: 'y',
+                    Cost: 123,
+                    ReservationId: 1
+                }]
+            },
+            {
+                FlightID: 'm562',
+                AirportID: 'm1322',
+                Aircraft: 'm1weqw2',
+                Capacity: '153',
+                Destination: 'england',
+                Duration: '5',
                 Origin: 'egypt',
                 Terminal: 'c1',
                 DepartureDate: '4/12/2016',
