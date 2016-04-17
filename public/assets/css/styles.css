@@ -117,8 +117,9 @@ h2{
 	margin-top: auto;
 }
 
-#1{
+#picss{
     display:block;
     margin:auto;
+    position: relative;
 }
 
