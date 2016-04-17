@@ -108,11 +108,13 @@ h2{
 }
 
 #signup{
-    
+    margin:auto;
+    text-align: center;
 }
 
 .sign{
     text-align: center;
     width: 50%;
-	margin-top: 40px;
+	margin-top: auto;
 }
+
