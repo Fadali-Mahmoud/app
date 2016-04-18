@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-      <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
 <div id='signup'>
 
-    <br/> Password :
-    <input class='sign' type="password"  ng-model="form.password" />
+    Password :
+    <input class='sign' type="password" name="pwd" ng-model="form.password" />
     <br/> Date of Birth :
-    <input class='sign' type="date of birth"  ng-model="form.birthDate" />
+    <input class='sign' type="date of birth" name="dob" ng-model="form.birthDate" />
     <br/> Email :
-    <input class='sign' type="email"  ng-model="form.email" />
+    <input class='sign' type="email" name="email" ng-model="form.email" />
     <br/> Telephone:
-    <input class='sign' type="telephone" ng-model="form.contactNumber" />
+    <input class='sign' type="telephone" name="tel" ng-model="form.contactNumber" />
     <br/> nationality :
-    <input class='sign' type="address"  ng-model="form.nationality" />
+    <input class='sign' type="address" name="add" ng-model="form.nationality" />
     <br/>
     <button class="medium secondary button" ng-click="signUp()">signUp</button>
 </div>
-</body>
-</html>
