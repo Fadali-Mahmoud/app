@@ -7,7 +7,7 @@ module.exports = function () {
      * init the first seed into db
      */
     var dbSeed = function (req, res) {
-       var flights = [
+        var flights = [
             {
                 FlightID: 'm12',
                 AirportID: 'm12',
@@ -58,6 +58,45 @@ module.exports = function () {
                 }]
             }
         ];
+        for (var i = 0; i < flights.length; i++) {
+            var flight = new Flight(flights[i]);
+            flight.save(function (err, res) {
+                if (err) {
+                    return console.error(err);
+                }
+            });
+        }
+        res.send('done');
+    };
+
+    /**
+     * delet all data from db
+     */
+    var dbDel = function () {
+
+    };
+
+    var searchRoundTrip = function (req, res) {
+        console.log({
+            from: req.params.from,
+            to: req.params.to,
+            dep: new Date(moment(parseInt(req.params.dep)).format('MM/DD/YYYY')),
+            return: new Date(moment(parseInt(req.params.return)).format('MM/DD/YYYY'))
+        });
+        Flight.find({
+                Origin: req.params.from,
+                Destination: req.params.to,
+                DepartureDate: new Date(moment(parseInt(req.params.dep)).format('MM/DD/YYYY')),
+                ArrivalDate: new Date(moment(parseInt(req.params.return)).format('MM/DD/YYYY'))
+            },
+            function (err, flights) {
+                if (err) {
+                    return console.error(err);
+                }
+                console.log(flights);
+                res.send(flights);
+            });
+    };
 
     var searchOnewayTrip = function (req, res) {
         Flight.find({
