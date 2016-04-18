@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 
 var app = express();
 
-var port = 5000;
+var port = 8080;
 
 app.listen(port, function (err) {
     console.log('running server on port ' + port);
